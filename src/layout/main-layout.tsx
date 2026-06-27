@@ -1,15 +1,16 @@
-// import { Navbar } from "@/components/common/navbar";
-// import Footer from "@/components/common/footer/Footer";
+
+import { Footer } from "@/components/common/Footer";
+import Navbar from "@/components/common/Navbar";
 import { Outlet, ScrollRestoration } from "react-router";
 
 const MainLayout = () => {
   return (
     <>
-      {/* <Navbar /> */}
-      <div className="body-height max-w-480 mx-auto px-4 sm:px-6 lg:px-0">
+      <Navbar />
+      <div className="body-height max-w-480 mx-auto">
         <Outlet />
       </div>
-      {/* <Footer /> */}
+      <Footer />
       <ScrollRestoration />
     </>
   );
